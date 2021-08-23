@@ -50,6 +50,18 @@ table {
 /* End CSS Reset */
 
 html, body {
-    height: 200px;
+    height: 2215px;
+	width: 100vw;
 }
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	font-size: calc(16px + 0.1vw);
+}
+
+
 
