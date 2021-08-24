@@ -242,4 +242,65 @@ button.purple > .emphasis {
 		width: 106.8%;
 		padding: 2.1% 0;
 	}
+
+	h1 {
+		font-size: 2.95em;
+		line-height: 1;
+		width: 44.2%;
+		padding: 8% 0% 3.15% 0%;
+	}
+
+	p {
+		width: 59.55%;
+		padding-bottom: 4.18%;
+	}
+
+	.button-group {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 45.35%;
+		padding-bottom: 0;
+	}
+
+	button {
+		width: 40%;
+		font-weight: 600;
+		border: none;
+		border-radius: 29px;
+	}
+
+	button.large {
+		width: 55.5%;
+	}
+
+	button.teal {
+		margin-bottom: 0;
+	}
+
+	.vertical-line {
+		height: 5.16em;
+		flex-shrink: 0;
+		align-self: flex-start;
+		margin-top: 11.4%;
+	}
+
+	.page-marker {
+		padding: 1.83% 2.38%;
+		margin-bottom: 8.75%;
+	}
+
+	.chat-picture-group {
+		flex-wrap: nowrap;
+		width: 89.75%;
+		justify-content: space-between;
+		padding-bottom: 6.25%;
+	}
+	
+	.chat-picture-group > img {
+		max-width: 23.75%;
+		padding: 0;
+		border-radius: 6%;
+	}
+
+	
 }
