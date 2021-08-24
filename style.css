@@ -82,8 +82,22 @@ section {
 	align-items: center;
 	flex: 1;
 }
+
+section:nth-of-type(3) {
+	background-image: url(assets/mobile/image-footer.jpg);
+	background-color: #4D96A9; 
+	background-size: cover;
+	background-blend-mode: soft-light;
+	color: #FAFAFA;
+}
+
 p {
 	width: 87%;
+	padding-bottom: 8.6%;
+}
+
+h2 + p {
+	padding-top: 3.25%;
 }
 h1 {
 	font-size: 2.5em;
@@ -98,30 +112,47 @@ h2 {
 	font-size: 2em;
 	font-weight: 900;
 	color: #28283D;
+	width: 87%;
 	line-height: 1.08;
+	padding-bottom: 6.5%;
 	/* line-height: 1.5em; */
 }
 
+section:nth-of-type(3) > h2 {
+	color: #FAFAFA;
+}
+
+section:nth-of-type(3) > .page-marker {
+	color: #87879D;
+
+}
+
+
 button {
-	width: 51.1%;
+	width: 37%;
 	padding: 5.5% 1%;
 	color: white;
 	font-size: 1em;
 	font-weight: 600;
 	border: none;
 	border-radius: 40px;
+}
 
+button.large {
+	width: 51.1%;
 }
 
 button.teal {
 	background-color: #4D96A9;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	margin-bottom: 4.5%;
 }
 
 button.purple {
 	background-color: #855FB1;
-	width: 37%;
+ }
+
+ section:nth-of-type(3) > button {
+	margin-bottom: 19.25%;
  }
 
 .logo {
@@ -140,17 +171,21 @@ button.purple {
 	width: 48%;
 }
 
-#body-text-1 {
-	padding-bottom: 8.6%;
-}
-
 .button-group {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding-bottom: 17%;
+	padding-bottom: 8.6%;
+}
+
+.emphasis {
+	color: #8FE3F9;
+}
+
+button.purple > .emphasis {
+	color: #D9B8FF;
 }
 
 .vertical-line {
@@ -159,6 +194,7 @@ button.purple {
 	height: 5.3em;
 	flex-shrink: 0;
 	align-self: flex-start;
+	margin-top: 8.6%;
 }
 
 .page-marker {
@@ -166,14 +202,18 @@ button.purple {
 	border-radius: 100%;
 	padding: 4% 5.25%;
 	font-weight: 900;
+	margin-bottom: 17%;
+	background-color: white;
 }
+
+
 
 .chat-picture-group {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
-	padding: 17% 0;
+	padding-bottom: 17%;
 
 }
 
@@ -183,3 +223,23 @@ button.purple {
 	border-radius: 12%;
 }
 
+.overline {
+	color: #4D96A9;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 900;
+	padding-bottom: 6.5%;
+}
+
+@media screen and  (min-width: 700px){
+	
+	.logo {
+		width: 15.5%;
+		padding: 6.25% 0;
+	}
+
+	.portraits-group {
+		width: 106.8%;
+		padding: 2.1% 0;
+	}
+}
