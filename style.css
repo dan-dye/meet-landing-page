@@ -51,6 +51,8 @@ table {
 html {
 	box-sizing: border-box;
 	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 * {
@@ -59,7 +61,8 @@ html {
 
 body {
 	min-height: 100%;
-	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -71,9 +74,6 @@ body {
 	line-height: 1.6;
 }
 
-/* img {
-	width: 100%;
-} */
 section {
 	width: 100%;
 	height: 100%;
@@ -100,6 +100,7 @@ p {
 h2 + p {
 	padding-top: 3.25%;
 }
+
 h1 {
 	font-size: 2.5em;
 	font-weight: 900;
@@ -133,8 +134,6 @@ section:nth-of-type(3) > h2 {
 	color: #FAFAFA;
 }
 
-
-
 button.large {
 	width: 51.1%;
 }
@@ -146,12 +145,11 @@ button.teal {
 
 button.purple {
 	background-color: #855FB1;
- }
+}
 
 section:nth-of-type(3) > button {
 	margin-bottom: 19.25%;
 }
-
 
 .logo {
 	width: 31%;
@@ -160,13 +158,17 @@ section:nth-of-type(3) > button {
 
 .portraits-group {
 	display: flex;
+	/* width: 100%; */
 	width: 110%;
 	justify-content: space-between;
 	padding: 3.5% 0;
+
 }
 
 .portraits-group > img {
 	width: 48%;
+	/* margin: 0 -10%;
+	overflow: -moz-hidden-unscrollable; */
 }
 
 .button-group {
@@ -177,6 +179,7 @@ section:nth-of-type(3) > button {
 	width: 100%;
 	padding-bottom: 8.6%;
 }
+
 
 .emphasis {
 	color: #8FE3F9;
@@ -239,7 +242,6 @@ section:nth-of-type(3) > .page-marker {
 
 @media screen and  (min-width: 700px){
 
-
 	h1 {
 		font-size: 2.95em;
 		line-height: 1;
@@ -261,13 +263,13 @@ section:nth-of-type(3) > .page-marker {
 	section:nth-of-type(3) {
 		background-image: url(assets/tablet/image-footer.jpg);
 	}
-	
+
 	h2 {
 		font-size: 2.45em;
 		width: 58%;
 		line-height: 1.1;
 		padding-bottom: 4.2%;
-		/* line-height: 1.5em; */
+
 	}
 
 	button {
@@ -276,7 +278,7 @@ section:nth-of-type(3) > .page-marker {
 		border: none;
 		border-radius: 29px;
 	}
-
+	
 	button.large {
 		width: 55.5%;
 	}
@@ -284,7 +286,6 @@ section:nth-of-type(3) > .page-marker {
 	button.teal {
 		margin-bottom: 0;
 	}
-
 	section:nth-of-type(3) > button {
 		width: 25.15%;
 		padding: 2.55%;
@@ -297,14 +298,13 @@ section:nth-of-type(3) > .page-marker {
 		width: 45.35%;
 		padding-bottom: 0;
 	}
-
 	.logo {
 		width: 15.5%;
 		padding: 6.25% 0;
 	}
 
 	.portraits-group {
-		width: 106.8%;
+		width: 100%;
 		padding: 2.1% 0;
 	}
 
@@ -314,6 +314,7 @@ section:nth-of-type(3) > .page-marker {
 		align-self: flex-start;
 		margin-top: 10.45%;
 	}
+
 	.vertical-line.partial {
 		height: 6.85em;
 	}
@@ -346,5 +347,4 @@ section:nth-of-type(3) > .page-marker {
 		margin-top: -3.5%;
 		margin-bottom: 8.36%;
 	}
-
 }
