@@ -188,10 +188,14 @@ button.purple > .emphasis {
 .vertical-line {
 	width: 50%;
 	border-right: 1px solid rgb(135, 135, 157, 0.25);
-	height: 5.3em;
+	height: 5.27em;
 	flex-shrink: 0;
 	align-self: flex-start;
 	margin-top: 8.6%;
+}
+
+.vertical-line.partial {
+	height: 7.03em;
 }
 
 .page-marker {
@@ -205,6 +209,7 @@ button.purple > .emphasis {
 
 section:nth-of-type(3) > .page-marker {
 	color: #87879D;
+	margin-top: -8%;
 }
 
 
@@ -256,9 +261,6 @@ section:nth-of-type(3) > .page-marker {
 		background-image: url(assets/tablet/image-footer.jpg);
 	}
 	
-
-
-
 	h2 {
 		font-size: 2.45em;
 		width: 58%;
@@ -280,6 +282,12 @@ section:nth-of-type(3) > .page-marker {
 
 	button.teal {
 		margin-bottom: 0;
+	}
+
+	section:nth-of-type(3) > button {
+		width: 25.15%;
+		padding: 2.55%;
+		margin: 5.25% 0 8.6% 0;
 	}
 
 	.button-group {
@@ -305,6 +313,10 @@ section:nth-of-type(3) > .page-marker {
 		align-self: flex-start;
 		margin-top: 10.45%;
 	}
+	.vertical-line.partial {
+		height: 6.85em;
+	}
+	
 
 	.page-marker {
 		padding: 1.83% 2.38%;
@@ -328,5 +340,10 @@ section:nth-of-type(3) > .page-marker {
 		padding-bottom: 2.1%;
 	}
 
+	section:nth-of-type(3) > .page-marker {
+		color: #87879D;
+		margin-top: -3.5%;
+		margin-bottom: 8.36%;
+	}
 
 }
