@@ -92,6 +92,18 @@ section:nth-of-type(3) {
 	color: #FAFAFA;
 }
 
+.header-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-group-spread {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+
 p {
 	width: 87%;
 	padding-bottom: 8.6%;
@@ -304,7 +316,7 @@ section:nth-of-type(3) > .page-marker {
 	}
 
 	.portraits-group {
-		width: 100%;
+		width: 110%;
 		padding: 2.1% 0;
 	}
 
@@ -347,4 +359,62 @@ section:nth-of-type(3) > .page-marker {
 		margin-top: -3.5%;
 		margin-bottom: 8.36%;
 	}
+}
+
+@media screen and  (min-width: 1000px){
+	.header-group {
+		display: none;
+	}
+
+	.header-group-spread {
+		display: flex;
+		width: 85%;
+		/* justify-content: space-between; */
+	}
+
+	.logo {
+		width: 8.265%;
+		padding: 6% 0 4.25%;
+	}
+	
+	.portraits-group {
+		width: 104.45%;
+	}
+
+	.portraits-group > img:nth-child(1) {
+		padding: 0 0 5%;
+	}
+
+	.portraits-group > img:nth-child(3) {
+		padding: 5% 0 0;
+	}
+
+	h1 {
+		font-size: 3.76em;
+		width: 63%;
+	}
+
+
+	p {
+		width: 76%;
+		padding-bottom: 4.54%;
+		font-size: 1.06em;
+	}
+
+	.button-group {
+		width: 49.3%;
+	}
+
+	button {
+		margin: 0 0 0 2.5%;
+		font-size: 0.94em;
+		padding: 5.75% 0;
+		width: 40.6%;
+	}
+
+	button.large {
+		width: 56%;
+		margin: 0 2.5% 0 0;
+	}
+
 }
