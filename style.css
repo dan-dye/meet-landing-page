@@ -370,7 +370,7 @@ section:nth-of-type(3) > .page-marker {
 	}
 }
 
-@media screen and  (min-width: 1000px){
+@media screen and  (min-width: 1283px){
 	.header-group {
 		display: none;
 	}
@@ -477,10 +477,10 @@ section:nth-of-type(3) > .page-marker {
 	}
 
 	.foot-section > button {
-		width: 193px;
-		height: 58px;
-		padding: 16px 40px;
+		width: 17.4%;
+		padding: 1.82% 3.6%;
 		margin: 0;
+
 	}
 
 	.foot-section > h2 {
@@ -491,6 +491,7 @@ section:nth-of-type(3) > .page-marker {
 
 	.foot-section > p {
 		width: 31.53%;
+		max-width: 1110px;
 	}
 
 	section:nth-of-type(3) {
