@@ -155,13 +155,23 @@ button.teal {
 	margin-bottom: 4.5%;
 }
 
+button.teal:hover {
+	background-color: #71C0D4;
+}
+
 button.purple {
 	background-color: #855FB1;
+}
+
+button.purple:hover {
+	background-color: #B18BDD;
 }
 
 .foot-section > button {
 	margin-bottom: 19.25%;
 }
+
+
 
 .logo {
 	width: 31%;
@@ -305,6 +315,8 @@ section:nth-of-type(3) > .page-marker {
 	button.teal {
 		margin-bottom: 0;
 	}
+
+
 
 	.foot-section > button {
 		width: 25.15%;
@@ -480,7 +492,6 @@ section:nth-of-type(3) > .page-marker {
 		width: 17.4%;
 		padding: 1.82% 3.6%;
 		margin: 0;
-
 	}
 
 	.foot-section > h2 {
