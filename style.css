@@ -142,7 +142,7 @@ button {
 	border-radius: 40px;
 }
 
-section:nth-of-type(3) > h2 {
+.foot-section > h2 {
 	color: #FAFAFA;
 }
 
@@ -159,7 +159,7 @@ button.purple {
 	background-color: #855FB1;
 }
 
-section:nth-of-type(3) > button {
+.foot-section > button {
 	margin-bottom: 19.25%;
 }
 
@@ -252,6 +252,13 @@ section:nth-of-type(3) > .page-marker {
 	padding-bottom: 6.5%;
 }
 
+.foot-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 @media screen and  (min-width: 700px){
 
 	h1 {
@@ -298,7 +305,8 @@ section:nth-of-type(3) > .page-marker {
 	button.teal {
 		margin-bottom: 0;
 	}
-	section:nth-of-type(3) > button {
+
+	.foot-section > button {
 		width: 25.15%;
 		padding: 2.55%;
 		margin: 5.25% 0 8.6% 0;
@@ -310,6 +318,7 @@ section:nth-of-type(3) > .page-marker {
 		width: 45.35%;
 		padding-bottom: 0;
 	}
+
 	.logo {
 		width: 15.5%;
 		padding: 6.25% 0;
@@ -379,6 +388,7 @@ section:nth-of-type(3) > .page-marker {
 	
 	.portraits-group {
 		width: 104.45%;
+		padding-bottom: 0;
 	}
 
 	.portraits-group > img:nth-child(1) {
@@ -415,6 +425,77 @@ section:nth-of-type(3) > .page-marker {
 	button.large {
 		width: 56%;
 		margin: 0 2.5% 0 0;
+	}
+
+	.vertical-line {
+		margin-top: 7%;
+	}
+
+	.page-marker {
+		padding: 15px 19.3px;
+		font-size: 0.95em;
+		margin-bottom: 4.5%;
+	}
+
+	.chat-picture-group {
+		width: 77.1%;
+		padding-bottom: 5.57%;
+	}
+
+	.chat-picture-group > img {
+		max-width: 23%;
+		border-radius: 4%;
+	}
+
+	.overline {
+		font-size: 0.95em;
+	}
+
+	h2 {
+		width: 30.9%;
+		font-size: 2.35em;
+		padding-bottom: 2.44%;
+	}
+
+	h2 + p {
+		width: 37.5%;
+	}
+
+	section:nth-of-type(3) > .page-marker {
+		margin-top: -2%;
+		margin-bottom: 0;
+	}
+
+
+	.foot-section {
+		flex-direction: row;
+		width: 77.1%;
+		padding: 6.14% 0 7%;
+		justify-content: space-between;
+		text-align: left;
+		
+	}
+
+	.foot-section > button {
+		width: 193px;
+		height: 58px;
+		padding: 16px 40px;
+		margin: 0;
+	}
+
+	.foot-section > h2 {
+		padding: 0;
+		width: 31.6%;
+
+	}
+
+	.foot-section > p {
+		width: 31.53%;
+	}
+
+	section:nth-of-type(3) {
+		background-image: url(assets/desktop/image-footer.jpg);
+		background-position: center;
 	}
 
 }
